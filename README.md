@@ -1,9 +1,9 @@
 # GettingCleaningData
 
-#Script to Analyse Data
+##Script to Analyse Data
 
 Run the R script run_analysis.R. 
 
-#Outputs produced
+##Outputs produced
 
 Tidy dataset file HumanActivityRecognitionUsingSmartphones.txt (tab-delimited text)
