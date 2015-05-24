@@ -8,11 +8,9 @@ path <- getwd()
 ##Get the data
 url <- "http://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 f <- "project.zip"
-
-#if (!file.exists(path)) {dir.create(path)}
-#download.file(url, file.path(path, f))
-
-#unzip ("project.zip", exdir = "./")
+if (!file.exists(path)) {dir.create(path)}
+download.file(url, file.path(path, f))
+unzip ("project.zip", exdir = "./")
 
 pathIn <- file.path(path, "UCI HAR Dataset")
 list.files(pathIn, recursive=TRUE)
