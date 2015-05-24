@@ -111,3 +111,6 @@ r1 == r2
 setkey(dat, subject, activity, featDomain, featAcceleration, featInstrument, featJerk, featMagnitude, featVariable, featAxis)
 datTidy <- dat[, list(count = .N, average = mean(value)), by=key(dat)]
 
+##Save to file
+f <- file.path(path, "HumanActivityRecognitionUsingSmartphones.txt")
+write.table(datTidy, f, quote = FALSE, sep = "\t", row.names = FALSE)
